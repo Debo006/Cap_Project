@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userform.css">
+    <link rel="Icon" href="logo.png">
+    <title>Monthly Product Data Form - Hisab Kitaab</title>  
+</head>
+<body>
+    <header>
+         <img src="icon/icon9.png" alt="form icon"  width="75"  >
+        <h1>Monthly Product Data Entry</h1>
+    </header>
+    
+    <label for="monthsInput">Number of Months:</label>
+    <input type="number" id="monthsInput" min="1">
+    <button class="btn1st" onclick="generateForm()">Generate Form</button>
+    <br><br>
+    <div id="formContainer"></div>
+    <div class="budget-section">
+        <h3>Budget for Next Month</h3>
+        <label>Enter Budget (INR): <input type="number" id="nextMonthBudget"></label>
+        <button class="btn1st" onclick="submitBudget()">Submit Budget</button>
+        <div id="budgetDisplay" style="margin-top: 10px; font-weight: bold;"></div>
+    </div>
+    <button class="submit-all-btn" onclick="submitAllData()">Submit All Data</button>
+
+    <footer>
+        &copy; 2025 Hisab Kitaab. All rights reserved.
+    </footer>
+   <script src="userform.js"></script>
+</body>
+</html>
